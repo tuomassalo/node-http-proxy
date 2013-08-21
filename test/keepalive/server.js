@@ -23,7 +23,6 @@ response += 'EOF';
 http.createServer(function (req, res) {
   res.writeHead(200, {
     'Content-Type': 'text/plain',
-    'Connection': 'Close', // <-- this is the hard part
     'Content-Length': responseLength
   });
   res.write(response);
